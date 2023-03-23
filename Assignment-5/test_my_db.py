@@ -41,7 +41,7 @@ class TestMyDataBase(unittest.TestCase):
         os.remove('mydatabase.db')
 
         with open('log.txt', 'a') as f:
-            f.write(f'{self.id()}, {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}\n')
+            f.write(f'{self.id()}, {datetime.now():"%Y-%m-%d %H:%M:%S"}\n')
 
     def test_students_of_age(self):
         """Test function
